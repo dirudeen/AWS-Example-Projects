@@ -5,7 +5,7 @@
 echo == Create bucket
 set -e # exit if there is an error
 
-# Check for the bucket name
+# check for bucket name
 if [ -z $1 ]; then
     echo Bucket name must be provided
     exit 1
