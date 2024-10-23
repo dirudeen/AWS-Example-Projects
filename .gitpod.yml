@@ -1,4 +1,7 @@
 tasks:
+  - name: Utils
+    before: |
+      sudo apt install tree -y
   - name: Install aws cli
     before: 
       cd /workspace && 
