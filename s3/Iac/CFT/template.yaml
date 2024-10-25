@@ -1,0 +1,7 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: A CloudFormation template for creating S3 bucket.
+Resources:
+  MyBucketName:
+    Type: AWS::S3::Bucket
+    Properties: 
+      BucketName: my-test-bucket-diru-3
