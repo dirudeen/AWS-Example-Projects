@@ -23,8 +23,6 @@ tasks:
   - name: Install pulumi
     before: |
       curl -fsSL https://get.pulumi.com | sh
-      echo 'export PATH="/home/gitpod/.pulumi/bin"' >> ~/.bashrc
-      source ~/.bashrc
     env:
       AWS_CLI_AUTO_PROMPT: on-partial
     
