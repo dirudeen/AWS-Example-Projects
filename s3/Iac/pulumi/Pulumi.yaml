@@ -1,0 +1,11 @@
+name: s3-pulumi
+description: A sample project for interacting with aws s3 using pulumi
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-python
