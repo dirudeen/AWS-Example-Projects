@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello, world!</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Test website" />
+</head>
+<body>
+  <h1>Hello, world!</h1>
+
+  <script>
+    fetch("https://5c2n5gxqa2.execute-api.us-east-1.amazonaws.com/cors-stage-1/hello", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    }
+    })
+    .then(res => {
+    if (!res.ok) throw new Error("Failed to fetch data")
+    return res.json()
+    })
+    .then(data => console.log(data))
+    .catch(err => console.log(err.message))
+
+  </script>
+</body>
+</html>

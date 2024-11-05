@@ -1,0 +1,11 @@
+{
+    "CORSRules": [
+      {
+        "AllowedOrigins": ["https://5c2n5gxqa2.execute-api.us-east-1.amazonaws.com"],
+        "AllowedHeaders": ["*"],
+        "AllowedMethods": ["PUT", "POST", "DELETE"],
+        "MaxAgeSeconds": 3000,
+        "ExposeHeaders": ["x-amz-server-side-encryption"]
+      }
+    ]
+  }
