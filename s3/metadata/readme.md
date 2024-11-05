@@ -22,10 +22,10 @@ aws s3api put-object \
 ``` sh
 aws s3api head-object --bucket metadata-test-bucket-dd --key hello.txt
 
+```
 ## CLEANUP
-
 ```sh
-aws s3 rm s3://metadata-test-bucket-dd/*
+aws s3 rm s3://metadata-test-bucket-dd --recursive
 
 aws s3 rb s3://metadata-test-bucket-dd
 ```
