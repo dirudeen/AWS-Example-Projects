@@ -50,3 +50,9 @@ https://5c2n5gxqa2.execute-api.us-east-1.amazonaws.com/cors-stage-1/hello \
 ```sh
 aws s3api put-bucket-cors --bucket fun-cors-example-dd-8833 --cors-configuration file://cors.json
 ```
+
+## cleanup
+```sh
+aws s3 rm s3://fun-cors-example-dd-8833 --recursive
+aws s3 rb s3://fun-cors-example-dd-8833
+```
