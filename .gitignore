@@ -43,3 +43,6 @@ terraform.rc
 # pulumi 
 *.pyc
 venv/
+
+# Ignore keys
+*.key
